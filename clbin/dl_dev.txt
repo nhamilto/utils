@@ -1,0 +1,19 @@
+cron tab 
+
+every day:
+make new folder for the scans
+make daily scan file ('CL51_scan_date.txt')
+
+every 10 minutes run:
+packet sniff
+
+30 seconds later run:
+follow udp stream
+strip header
+strip out "1024"
+
+append to daily scan file
+
+end of day:
+compress raw packet data
+delete folder
