@@ -9,6 +9,14 @@ apt things
 ----------
 apt-get install $(grep -vE "^\s*#" filename  | tr "\n" " ")
 
+
+Other apps
+----------
+FileZilla
+Wireshark
+Teamviewer
+
+
 sytem things
 ----------------
 crontab -l > /some/shared/location/crontab.bak
