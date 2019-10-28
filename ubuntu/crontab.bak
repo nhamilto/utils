@@ -1,0 +1,40 @@
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+#
+#
+#
+###### run at the beginning of each day
+# setup data logging folder for the day
+#0 0 * * * /bin/sh /home/nwtc/bin/daily_datalogging_setup.sh
+#
+# cleanup data logging from yesterday
+#10 0 * * * /bin/sh /home/nwtc/bin/daily_datalogging_cleanup.sh
+
+###### run at the top of every hour
+# capture data stream from CL51
+# flags:
+#	-r roll_sec: listen for roll_sec seconds per file
+#	-n nfiles: write to nfiles separate capture files
+#	total listen time is nfiles*roll_sec seconds
+#*/30 * * * * /bin/sh /home/nwtc/bin/capture_follow_sed.sh -r 300 -n 6
+#* * * * * /bin/sh /home/nwtc/bin/crontest.sh

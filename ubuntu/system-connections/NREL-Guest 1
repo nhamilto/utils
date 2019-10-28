@@ -1,0 +1,23 @@
+[connection]
+id=NREL-Guest 1
+uuid=792017c8-db00-4f76-b55a-17b40127917f
+type=wifi
+permissions=user:nicholas:;
+secondaries=
+
+[wifi]
+mac-address=9C:EF:D5:FC:73:9C
+mac-address-blacklist=
+mac-address-randomization=0
+mode=infrastructure
+seen-bssids=
+ssid=NREL-Guest
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+method=auto

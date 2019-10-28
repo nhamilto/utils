@@ -1,0 +1,22 @@
+[connection]
+id=AT&T LTE 1
+uuid=9ec19bdd-54cd-44fd-8bf0-142eb3675ebf
+type=gsm
+autoconnect=false
+permissions=user:nicholas:;
+secondaries=
+
+[gsm]
+apn=pta
+number=*99#
+password-flags=1
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+ip6-privacy=0
+method=auto

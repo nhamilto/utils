@@ -1,0 +1,23 @@
+[connection]
+id=NREL-Guest 2
+uuid=e3a4907d-d7ec-4fe8-8ae2-5abc50e285b6
+type=wifi
+permissions=user:nwtc:;
+secondaries=
+
+[wifi]
+mac-address=9C:EF:D5:FC:73:9C
+mac-address-blacklist=
+mac-address-randomization=0
+mode=infrastructure
+seen-bssids=
+ssid=NREL-Guest
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+method=auto

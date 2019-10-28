@@ -1,0 +1,22 @@
+[connection]
+id=AT&T LaptopConnect (data cards) 1
+uuid=3a74b03a-0859-4d35-a9c0-4e61ec6c73fa
+type=gsm
+autoconnect=false
+permissions=user:nicholas:;
+secondaries=
+
+[gsm]
+apn=Broadband
+number=*99#
+password-flags=1
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+ip6-privacy=0
+method=auto
